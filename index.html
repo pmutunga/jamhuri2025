@@ -9,13 +9,29 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* added header styles */
+    .site-header { padding: 0.75rem 0; background: #fff; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .site-header .logo { height: 64px; width: auto; display: block; }
+    .site-header .brand { margin-left: 0.75rem; font-weight:600; color:#000; text-decoration:none; }
+    @media (max-width:576px){ .site-header .brand { display:none } }
+  </style>
 </head>
 
 <body>
+    <!-- added header with logo at top-left -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center">
+      <a href="/" class="d-flex align-items-center">
+        <img src="images/KE-NCR%20logo.JPG" alt="KE-NCR logo" class="logo">
+       <!-- <span class="brand">KE‑NCR — Jamhuri Day Dinner 2025</span>-->
+      </a>
+    </div>
+  </header>
   <!-- Hero Section -->
   <section class="hero text-center text-white d-flex align-items-center justify-content-center">
     <div class="container">
-      <h1 class="display-4 fw-bold">🇰🇪 Jamhuri Day Dinner 2025</h1>
+      <h1 class="display-4 fw-bold">KE-NCR <br> Jamhuri Day Dinner 2025</h1>
       <p class="lead">Dress Code: <em>Elegance in Kenyan Colors</em></p>
       <p><strong>Date:</strong> [Insert Date] | <strong>Venue:</strong> [Insert Venue]</p>
       <a href="#tickets" class="btn btn-light btn-lg mt-3">Register Now</a>
@@ -40,22 +56,22 @@
       <h2 class="mb-4">What to Expect</h2>
       <div class="row g-4">
         <div class="col-md-3">
-          <img src="images/music.png" alt="Live Band" class="mb-3" width="60">
+          <img src="images/music.png" alt="Live Band" class="mb-3" width="200">
           <h5>Music</h5>
           <p>Dance to soulful Kenyan tunes.</p>
         </div>
         <div class="col-md-3">
-          <img src="images/food.png" alt="Food" class="mb-3" width="60">
+          <img src="images/food.png" alt="Food" class="mb-3" width="200">
           <h5>Delicious Food</h5>
           <p>A taste of home in every bite.</p>
         </div>
         <div class="col-md-3">
-          <img src="images/family.png" alt="Family Fun" class="mb-3" width="60">
+          <img src="images/family.png" alt="Family Fun" class="mb-3" width="170">
           <h5>Family Fun</h5>
           <p>Activities for all ages.</p>
         </div>
         <div class="col-md-3">
-          <img src="images/celebration.png" alt="Culture" class="mb-3" width="60">
+          <img src="images/celebration.png" alt="Culture" class="mb-3" width="170">
           <h5>Culture & Connection</h5>
           <p>Celebrate in color and culture.</p>
         </div>
@@ -81,28 +97,29 @@
           💡 <em>Include your full name and number of tickets in the message section</em> so we can confirm your registration quickly.
         </p>
         <p>
-          Once your e-transfer is complete, please fill out the registration form below to secure your spot.  
+          Once your e-transfer is complete, we will send you an email with your ticket.  
           <br>Tickets are only confirmed after payment is received.
         </p>
       </div>
     </div>
   </section>
+ <!-- Contact Form -->
 
-  <!-- Registration Form -->
   <section id="register" class="register py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Register Now</h2>
+      <h2 class="text-center mb-4">Got a question?</h2>
       
-      <!-- Confirmation Message (Hidden by Default) -->
+      <!-- Confirmation Message (Hidden by Default)
       <div id="confirmation-message" class="alert alert-success text-center mb-4" style="display: none;">
         🎉 <strong>Thank you for registering!</strong><br>
         Your details have been received. Please complete your e-transfer to 
         <a href="mailto:kenncr@gmail.com">kenncr@gmail.com</a> to confirm your tickets.
-      </div>
+      </div> -->
 
       <form id="registration-form" class="col-md-6 mx-auto">
         <div class="mb-3">
-          <label for="name" class="form-label">Full Name</label>
+            <script type="text/javascript" src="https://form.jotform.com/jsform/220095813227048"></script>
+         <!-- <label for="name" class="form-label">Full Name</label>
           <input type="text" class="form-control" id="name" required />
         </div>
         <div class="mb-3">
@@ -115,7 +132,48 @@
         </div>
         <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
       </form>
-    </div>
+  <!-- Registration Form (Google Form embed)
+  <section id="register" class="register py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Register Now</h2>
+
+      <!-- Confirmation Message (Hidden by Default) -->
+        <!-- <div id="confirmation-message" class="alert alert-success text-center mb-4" style="display: none;">
+        🎉 <strong>Thank you for registering!</strong><br>
+        Your details have been received. Please complete your e-transfer to 
+        <a href="mailto:kenncr@gmail.com">kenncr@gmail.com</a> to confirm your tickets.
+      </div> -->
+
+      <!--
+        Replace YOUR_FORM_ID below with your Google Form's ID.
+        Example embed URL: https://docs.google.com/forms/d/e/1GPbLAM39r8RnIeb8_Fnn_3rMJ2wbnM3D3GouNTxpvt8/viewform?embedded=true
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScC72AmskQqb9ExHP37hl27LS586pDhbfwXXAio_bP7UKAUzw/viewform?embedded=true" width="640" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        -->
+       <!--  <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://docs.google.com/forms/d/e/d/e/1FAIpQLScC72AmskQqb9ExHP37hl27LS586pDhbfwXXAio_bP7UKAUzw/viewform?embedded=true"
+                 title="Jamhuri Day Dinner Registration"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              loading="lazy"
+              allow="clipboard-write"
+            >
+              Loading…
+            </iframe>
+          </div>-->
+
+          <!-- noscript fallback link
+          <noscript class="d-block text-center mt-3">
+            JavaScript is disabled — open the form directly:
+            <br>
+            <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener noreferrer">Open registration form</a>
+          </noscript>
+        </div>
+      </div>
+    </div> -->
   </section>
 
   <!-- Footer -->
