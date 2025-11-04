@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join us for the Jamhuri Day Dinner 2025 — a night of elegance, culture, and celebration in Kenyan colors." />
+  <title>Jamhuri Day Dinner 2025 | Elegance in Kenyan Colors</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">🇰🇪 Jamhuri Day Dinner 2025</h1>
+      <p class="lead">Dress Code: <em>Elegance in Kenyan Colors</em></p>
+      <p><strong>Date:</strong> [Insert Date] | <strong>Venue:</strong> [Insert Venue]</p>
+      <a href="#tickets" class="btn btn-light btn-lg mt-3">Register Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Celebrate in Style</h2>
+      <p>
+        This year’s <strong>Jamhuri Dinner</strong> invites you to embrace the bold, beautiful colors of our flag — 
+        <span class="text-black">Black</span>, <span class="text-danger">Red</span>, <span class="text-success">Green</span> with a touch of <span class="text-secondary">White</span>.
+        Step out in elegance and celebrate Kenya’s independence with pride, joy, and community!
+      </p>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">What to Expect</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <img src="images/music.png" alt="Live Band" class="mb-3" width="60">
+          <h5>Music</h5>
+          <p>Dance to soulful Kenyan tunes.</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/food.png" alt="Food" class="mb-3" width="60">
+          <h5>Delicious Food</h5>
+          <p>A taste of home in every bite.</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/family.png" alt="Family Fun" class="mb-3" width="60">
+          <h5>Family Fun</h5>
+          <p>Activities for all ages.</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/celebration.png" alt="Culture" class="mb-3" width="60">
+          <h5>Culture & Connection</h5>
+          <p>Celebrate in color and culture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets & Payment Section -->
+  <section id="tickets" class="tickets py-5 text-center text-white">
+    <div class="container">
+      <h2 class="mb-4">Tickets & Payment</h2>
+      <p><strong>$35 per person</strong></p>
+      <p><strong>Bulk Purchase (15+):</strong> $30 per person</p>
+      <p><strong>Kids (1–5 years):</strong> Free</p>
+
+      <div class="mt-4 p-4 bg-dark rounded-3">
+        <h5 class="text-uppercase fw-bold mb-3 text-warning">How to Pay</h5>
+        <p>
+          Please send your payment by <strong>e-transfer</strong> to:<br>
+          <a href="mailto:kenncr@gmail.com" class="text-white fw-bold">kenncr@gmail.com</a>
+        </p>
+        <p>
+          💡 <em>Include your full name and number of tickets in the message section</em> so we can confirm your registration quickly.
+        </p>
+        <p>
+          Once your e-transfer is complete, please fill out the registration form below to secure your spot.  
+          <br>Tickets are only confirmed after payment is received.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" class="register py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Register Now</h2>
+      
+      <!-- Confirmation Message (Hidden by Default) -->
+      <div id="confirmation-message" class="alert alert-success text-center mb-4" style="display: none;">
+        🎉 <strong>Thank you for registering!</strong><br>
+        Your details have been received. Please complete your e-transfer to 
+        <a href="mailto:kenncr@gmail.com">kenncr@gmail.com</a> to confirm your tickets.
+      </div>
+
+      <form id="registration-form" class="col-md-6 mx-auto">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="tickets" class="form-label">Number of Tickets</label>
+          <input type="number" class="form-control" id="tickets" min="1" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center text-white">
+    <p class="mb-0">&copy; 2025 Jamhuri Day Dinner | Designed with ❤️ in Kenyan Colors</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
