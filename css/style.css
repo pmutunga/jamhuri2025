@@ -1,0 +1,78 @@
+/* Color palette */
+:root {
+  --black: #000000;
+  --red: #BB0000;
+  --red-dark: #922529;
+  --green: #006600;
+  --green-bright: #008C51;
+  --white: #FFFFFF;
+}
+
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+/*.hero {
+  background: linear-gradient(135deg, var(--black), var(--red-dark));
+  min-height: 100vh;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}*/
+
+/* ...existing code... */
+.hero {
+  position: relative;
+  /* try the most likely paths first; adjust if your image is in a different folder */
+  background-image: url('../Images/heroimg.jpg'), url('images/heroimg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--black); /* fallback while image loads */
+  min-height: 70vh; /* change to 100vh if you want a full-screen hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--white);
+  overflow: hidden;
+}
+
+/* subtle dark overlay so white text is readable on any image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+  z-index: 0;
+}
+
+/* ensure hero content sits above the overlay */
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ...existing code... */
+
+
+/* Tickets Section */
+.tickets {
+  background: linear-gradient(135deg, var(--green), var(--black));
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--red);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: var(--green-bright);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+}
