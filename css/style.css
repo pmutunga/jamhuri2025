@@ -25,7 +25,7 @@ body {
 .hero {
   position: relative;
   /* try the most likely paths first; adjust if your image is in a different folder */
-  background-image: url('../Images/heroimg.jpg'), url('images/heroimg.jpg');
+  background-image: url('Images/heroimg.jpg'), url('images/heroimg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,3 +76,4 @@ body {
 footer {
   background-color: var(--black);
 }
+
