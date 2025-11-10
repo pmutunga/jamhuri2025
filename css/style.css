@@ -25,12 +25,12 @@ body {
 .hero {
   position: relative;
   /* try the most likely paths first; adjust if your image is in a different folder */
-  background-image: url('../Images/heroimg.png'), url('images/heroimg.png');
+  background-image: url('../Images/heroimg2.png'), url('images/heroimg2.png'),  url('heroimg2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--black); /* fallback while image loads */
-  min-height: 70vh; /* change to 100vh if you want a full-screen hero */
+  min-height: 80vh; /* change to 100vh if you want a full-screen hero */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,12 @@ body {
   padding: 4rem 1rem;
   color: var(--white);
   overflow: hidden;
+}
+/* For mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('images/mobile-heroimg2.png'), url('../Images/mobile-heroimg2.png'), url('mobile-heroimg2.png');
+  }
 }
 
 /* subtle dark overlay so white text is readable on any image */
@@ -71,6 +77,24 @@ body {
 .btn-primary:hover {
   background-color: var(--green-bright);
 }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+  .social-icons a {
+      color: #333; /* default color */
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #0d6efd; /* Bootstrap primary blue */
+    }
 
 /* Footer */
 footer {
