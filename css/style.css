@@ -15,13 +15,13 @@ body {
 }
 
 /* Hero Section */
-/*.hero {
+.hero {
   background: linear-gradient(135deg, var(--black), var(--red-dark));
   min-height: 100vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}*/
+}
 
-/* ...existing code... */
+/* ...existing code... 
 .hero {
   position: relative;
   /* try the most likely paths first; adjust if your image is in a different folder */
@@ -44,7 +44,7 @@ body {
   .hero {
     background-image: url('../images/mobile-heroimg2.png');
   }
-}
+}*/
 
 /* subtle dark overlay so white text is readable on any image */
 .hero::before {
@@ -100,6 +100,7 @@ body {
 footer {
   background-color: var(--black);
 }
+
 
 
 
